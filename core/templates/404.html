@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="carousel-item active" id="erro404">
+    <div class="carousel-caption d-md-block">
+      <h2>Erro 404</h2>
+      <p>Este é apenas um app de portfolio</p>
+      <a href="{% url 'index' %}" class="main-btn">Voltar ao menu principal</a>
+    </div>
+</div>
+{% endblock %}

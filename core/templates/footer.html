@@ -1,0 +1,73 @@
+{% load static %}
+<footer>
+    <div id="contact-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="main-title">Entre em Contato</h3>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-phone"></i>
+            <p><span class="contact-title">Ligue para:</span> (11)99999-9999</p>
+            <p><span class="contact-title">Horários:</span>08:00 as 19:00</p>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-envelope"></i>
+            <p><span class="contact-title">Envie um email:</span> contato@hdcagency.com.br</p>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <p><span class="contact-title">CT do clube:</span> Rua Lorem Ipsum - 1234</p>
+          </div>
+          <div class="col-md-6" id="msg-box">
+            <p>Ou nos deixe uma mensagem:</p>
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <form id="contato" autocomplete="off" method="post" action="{% url 'index' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                  <input type="text"  name="nome" class="form-control" id="nome" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" autocomplete="off" class="form-control" name="email" id="email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" autocomplete="off"  class="form-control" name="assunto" id="assunto" placeholder="Assunto" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" autocomplete="off"  id="mensagem" name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+                </div>
+                <input type="submit" class="main-btn" value="Enviar">
+              </form>
+            </div>
+          </div>
+
+          <!-- Ao utilizar mensagens, desmarque -->   
+          {% if messages %}
+            {% for m in messages %}
+              <div class="alert alert-{{ m }}">
+                <button type="button" class="close" data-dismiss="alert"></button>
+                <strong>{{ m }}</strong>
+              </div>
+            {% endfor %}
+          {% endif %}
+          
+        </div>
+        </div>
+      </div>
+      
+
+      
+    </div>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Desenvolvido por <a href="https://linkedin.com/gil-cesar-martins" target="_blank">Gil César </a>&copy;2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer> 
