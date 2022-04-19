@@ -67,13 +67,13 @@ WSGI_APPLICATION = 'bufunfa.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '<banco_de_dados>',
+        'NAME': 'bufunfa',
         'USER': '<usuario_do_banco>',                  # Digite o nome do usuário do banco de dados
-        'PASSWORD': '<senha>',          #Digite a senha
+        'PASSWORD': '<senha>',                         # Digite a senha
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -83,7 +83,7 @@ DATABASES = {
 DATABASES = {
     'default': dj_database_url.config()
 }
-
+"""
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -126,7 +126,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Email teste console
 
-#EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend'
 
 
 """

@@ -244,6 +244,11 @@ header, .navbar {
     text-align: center;
 }
 
+/* GRÁFICO */
+#chart1-container {
+    margin-bottom: 4em;
+}
+
 /* Escolinha */
 
 #apply-area {
@@ -277,8 +282,8 @@ header, .navbar {
 #pattern-img p {
     text-align: center;
     margin-bottom: 20px;
-    text-shadow: 2px 1px #0f13f3;
-    color: #fff;
+    text-shadow: 2px 2px 8px #050899;
+    color: rgb(250, 117, 8);
     font-size: 20px;
     font-weight: 700;
 }
@@ -298,9 +303,6 @@ header, .navbar {
     border-color: #65DAF9;
     background-color: #65DAF9;
 }
-
-/* Gráfico */
-
 
 /* News letter */
 
@@ -415,10 +417,12 @@ header, .navbar {
 }
 
 #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
+    font-size: 14px;
     margin-bottom: 15px;
     border-radius: 0;
 }
 #contact-form .main-btn {
+    padding: 5px 15px ;
     width: 140px;
     height: 50px;
 }
@@ -577,11 +581,16 @@ header, .navbar {
         text-align: justify;
     }
     #pattern-img p {
-        color: #fff;
-        text-shadow: 2px 2px darkblue;
+        text-shadow: 2px 2px 4px #060ae7;
+        color: rgb(250, 117, 8);
         text-align: justify;
         font-size: 14px;
         font-weight: 700;
+    }
+    #apply-btn {
+        width: 140px;
+        padding: 5px 5px;
+        margin-top: 30px;
     }
 
     /* apply */
@@ -632,5 +641,36 @@ header, .navbar {
     .contact-box {
         border: none;
         margin-bottom: 0;
+    }
+    #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
+        font-size: 14px;
+        margin-bottom: 15px;
+        border-radius: 0;
+    }
+    #contact-form .main-btn {
+        padding: 5px 15px ;
+        width: 140px;
+        height: 50px;
+    }
+
+    #contact-form .main-btn:hover {
+        color: #3EC1D5;
+    }
+
+    .contact-box {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #3EC1D5;
+    }
+    
+    .contact-box i {
+        color: goldenrod;
+        border: solid 1px #3EC1D5;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
  }
